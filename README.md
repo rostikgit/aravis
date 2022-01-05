@@ -60,6 +60,17 @@ sudo apt install libxml2-dev libglib2.0-dev cmake libusb-1.0-0-dev gobject-intro
 		 libgirepository1.0-dev
 ```
 
+### Troubleshooting
+
+while connecting the camera through a USB adapter make sure to go to the settings
+and change both: the IPv4 and IPv6 methods to `local only` and turn off both the DNS and the routes
+also make sure to put the MTU size to the maximum possible value.
+
+after making the connection make sure to run the `arv-auto-packet-size-test` 
+which located in `aravis/build/tests/`, the script will define the optimal packet size for your device.
+after the changes run the `arv-camera-test.py` which is located in `aravis/tests/python/` to check if the camera is working properly/
+
+
 #### Building on macOS
 
 Using the GNU build system on macOS is not directly supported, but can be
