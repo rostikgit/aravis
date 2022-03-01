@@ -72,6 +72,14 @@ which located in `aravis/build/tests/`, the script will define the optimal packe
 after the changes run the `arv-camera-test.py` which is located in `aravis/tests/python/` to check
 whether the camera is working properly.
 
+* If you have installed aravis in a non standard location, you may need
+* to make GI_TYPELIB_PATH point to the correct location. For example:
+
+* export GI_TYPELIB_PATH=$GI_TYPELIB_PATH:/opt/bin/lib/girepositry-1.0/
+
+* You may also have to give the path to libaravis.so, using LD_PRELOAD or
+  LD_LIBRARY_PATH.
+
 
 #### Building on macOS
 
