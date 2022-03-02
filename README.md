@@ -80,6 +80,7 @@ whether the camera is working properly.
 * You may also have to give the path to libaravis.so, using LD_PRELOAD or
   LD_LIBRARY_PATH.
 
+* If the script cannot detect the aravis in the libraries make sure to check the the ```Aravis-0.8.typelib``` file is located in ```/usr/lib/x86_64-linux-gnu/girepository-1.0/```
 
 #### Building on macOS
 
